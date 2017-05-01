@@ -53,7 +53,7 @@ function takePhoto() {
 }
 
 function redEffect(pixels) {
-  for(let i = 0; i < pixels.data.length; i+=4;) {
+  for(let i = 0; i < pixels.data.length; i+=4) {
     pixels.data[i] = pixels.data[i + 0] + 100;  // Red
     pixels.data[i + 1] = pixels.data[i + 1] - 50;   // Green
     pixels.data[i + 2] = pixels.data[i + 2] * 0.5;   // Blue
@@ -63,7 +63,7 @@ function redEffect(pixels) {
 }
 
 function rgbSplit(pixels) {
-  for(let i = 0; i < pixels.data.length; i+=4;) {
+  for(let i = 0; i < pixels.data.length; i+=4) {
     pixels.data[i -150] = pixels.data[i + 0];  // Red
     pixels.data[i + 500] = pixels.data[i + 1];   // Green
     pixels.data[i - 550] = pixels.data[i + 2];   // Blue
@@ -79,7 +79,7 @@ function greenScreen(pixels) {
     levels[input.name] = input.value;
   });
 
-  for(let i = 0; i < pixels.data.length; i+=4;) {
+  for(let i = 0; i < pixels.data.length; i+=4) {
     red = pixels.data[i + 0];
     green = pixels.data[i + 1];
     blue = pixels.data[i + 2];
