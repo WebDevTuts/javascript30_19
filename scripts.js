@@ -27,4 +27,9 @@ function paintToCanvas() {
   }, 16);   // start every 16ms
 }
 
+function takePhoto() {
+  snap.currentTime = 0;
+  snap.play();
+}
+
 getVideo();
